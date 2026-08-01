@@ -7,11 +7,15 @@
 body{
     font-family:Arial,sans-serif;
     background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
 .container{
     width:400px;
-    margin:60px auto;
+    max-width:90%;
     background:#fff;
     padding:30px;
     border-radius:10px;
@@ -32,6 +36,14 @@ input{
     width:100%;
     padding:10px;
     margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#007BFF;
 }
 
 button{
@@ -41,6 +53,8 @@ button{
     background:#007BFF;
     color:white;
     border:none;
+    border-radius:5px;
+    font-size:16px;
     cursor:pointer;
 }
 
@@ -51,4 +65,13 @@ button:hover{
 p{
     margin-top:20px;
     text-align:center;
+}
+
+a{
+    color:#007BFF;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
 }
