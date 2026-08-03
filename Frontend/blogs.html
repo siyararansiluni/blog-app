@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Blogs</title>
+
+</head>
+
+
+<body>
+
+
+<h1>All Blogs</h1>
+
+
+<div id="blogs">
+
+
+</div>
+
+
+
+<script>
+
+
+fetch("../backend/blogs/view_blogs.php")
+
+.then(response => response.text())
+
+.then(data=>{
+
+document.getElementById("blogs").innerHTML=data;
+
+})
+
+
+</script>
+
+
+</body>
+
+</html>
